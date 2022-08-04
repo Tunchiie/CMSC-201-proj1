@@ -1,0 +1,247 @@
+# File:    design1.txt
+# Author:  Adetunji Fasiku
+# Date:    3/29/2019
+# Section: 22
+# E-mail:  Afasiku1@umbc.edu
+# Description:
+#   This program converts strings to its hawaiian pronunciation
+
+# info for getting choice
+ANSWERS  = ["y", "yes", "n", "no"]
+CONTINUE = "Do you want to enter another word?"
+
+# info about characters
+CONSONANTS = ["h", "k", "l", "m", "n", "p", "w"]
+OKINA       = "'"
+VOWELS      = ["a", "e", "i", "o", "u"]
+COMP_VOWELS = ["ai", "ae", "ao", "au", "ei", "eu", "iu", "oi", "ou", "ui"]
+# etc ... (more constants, to be added by you)
+
+
+
+###################################################
+# getChoice() prompts and reprompts the user until
+#             they select a valid choice
+# Parameters: question; a string to be asked
+#             options; a list of string options
+# Return:     choice; a string chosen by the user
+
+
+# etc ... (more function headers, to be added by you)
+def getChoice (question, options):
+    # asks if user wants to put in another word
+    #checks if the string inputted is equivalent to ANSWERS [0] and [1]
+      # makes a variable = True
+    # or
+      # makes a variable = False
+    return variable
+###################################################
+#  gethawaiianPhrase() determines if a string
+#                              is valid
+# Parameters: nothing
+# Return:     hawaiianPhrase; a valid string
+def getHawaiianPhrase():
+    # initializes a variable = 0
+    # initializes anotherVariable = 0
+    # makes an empty  list to contain all valid characters
+    # add the constants VOWELS, CONSONANTS AND OKINA to the list
+    # initializes a variable to get the users phrase
+    # splits the phrase into a list
+    # initializes a boolean flag
+    # loops while the boolean flag == False
+	  # loops while the variable< length of the list containing the split strings 
+	  	# checks if the phrase ends in a vowel
+	     	   # prints a statement if it`s true
+		   # makes boolean flag = False
+	  # loops while anothervariable < length of the users phrase 
+	  	# checks if the characters are not valid
+		  # prints a statement saying the invalid characters
+		  # makes boolean flag = False
+		# adds 1 to a variable every time
+	     # checks if the boolean flag is false
+	       # reinitializes variable to get users input
+	       # splits new phrase into a list
+	       # reinitializes a variable = 0
+	       # reinitiaize anotherVariable = 0
+	     # or
+	       # make boolean flag = true
+	       # returns the valid phrase
+###################################################
+# pronounceWord(word) describes how to pronounce
+#                     a single word
+# Parameters: word; a string to checked
+# Return:     wordPronunciation; a string
+#                                  pronounced
+def pronounceWord (word):
+    # initialize avariable = 0
+    # initialize a variable = to an empty string
+    # loops while a varible < the length of word
+      # initialize a varible that saves the character in the string being checked
+      # initialize a variable to make the variable above case insensitive
+      # initializes a varible  that adds three to aVariable
+      # initializes a variable that adds two to aVariable
+      # checks if the character saved is equal to a, e or o
+      	# checks if index == length of the word
+	  # concatenates the character to an empty string and an h
+	# or
+	  # checks if y  is in the next three indices
+	    # checks if variable == length of the word
+	      # concatenates next three indices to a string
+	    # or
+	      #concatenates next three indices and "-" to a string
+	    # reinitializes avariable = to the variable that adds three to avariable
+	  # checks if 'ow' or 'oo' in next two indices
+	    # concatenates 'ow' or 'oo' to a string
+	  # or
+	    # concatenates the character and 'h-' to a string
+      # or checks if the character = 'u'
+      	# checks if index == length of the word
+	  # concatenates "oo" to a string
+	# or
+	  # concatenates "oo-"
+      # or checks if the character = 'i'
+      	# checks if index == length of the word
+	  # concatenates 'ee' to a string
+	# or
+	  # concatenates "ee-" to a string
+      # or
+      	# concatenates the character to a string
+      # adds one to aVariable
+     # returns a string
+###################################################
+# pronounceW(word, index) determines how to 
+#             	   	  pronounce a w
+# Parameters: word; a string to be checked for w's
+#             index ; the index where the w is
+#                      located
+# Return:     wInword; a string with the correct
+#                       pronunciation of w
+def pronounceW (word, index):
+    # initialize a variable with an empty string
+    # initialize aVariable = 0
+    # loops while aVariable < length of word
+      # checks if character at index of word in lower case = 'w'
+      	# initialize a variable to save the character before the character above
+	# checks if the character before is 'u', 'o' or aVariable = 0
+		# concatenates "w" to a string
+	# or checks if the character before is 'a', 'e' or 'i'
+	  # concatenates a v to a string
+      # or
+      	# concatenates the character to a string
+      # adds 1 to aVariable
+      # returns a string
+###################################################
+# complexVowels(vowels) determines how to
+#                         pronounce a vowel
+# Parameters: vowels; a string of vowels
+# Return:     result; a string containing 
+#                       pronunciation of vowel
+def complexVowels (vowels)
+    # initialize variable = an empty string
+    # checks if vowels = 'ai' or 'ae'
+      # concatenates "eye-" to a string
+    # or checks if vowels = 'ao' or 'au'
+      # concatenates "ow-" to a string
+    # or checks if vowels = 'ei'
+      # concatenates "ay-" to a string
+    # or checks if vowels = 'eu'
+      # concatenates "eh-oo-" to a string
+    # or checks if vowels = 'iu'
+      # concatenates "ew-" to a string
+    # or checks if vowels = 'oi'
+      # concatenates "oy_"
+    # or checks if vowels = 'ou'
+      # concatenates "ow-" to a string
+    # or checks if vowels = 'ui'
+       # concatenates "ooey-" to a sting
+    # return a string
+    # reinitialize result as an empty string
+###################################################
+# pronouncePhrase (word) determines how a phrase
+#                                   is pronounced
+# Parameters: phrase; a list containing the strings
+#                      in a phrase
+# Return:     hawaiianPhrase; an hawaiian
+#                               pronunciation; 
+def pronouncePhrase (phrase):
+    # initialize a varible = 0
+    # initialize a variable = an empty list
+    # loops while phrase index < length of phrase
+      # initialize a variable = calls pronounceWord (word)
+      # stores the string returned
+      # adds 1 to a variable
+    # joins the list of strings pronounced
+    # returns a string
+def main():
+    # initialize a boolean flag = False
+    # loops while the boolean flag not equal False
+      # initializes aVariable = 0
+      # initializes another variable = 0
+      # initializes another variable = 0
+      # initializes another variable = 0
+      # initializes another variable = 0
+      # initializes another variable = empty string
+      # initialize a boolesn flag = False
+      # initializes another variable = empty string
+      # initializes another variable = empty string
+      # initialize a variable =  split call getHawaiianPhrase()
+      # initialize a varible = an empty list
+      # initialize a varible = an empty list
+      # checks if length of variable > 1:
+      	# initializes a varible = variable above
+      # loops while aVariable is less than the length of the variable
+      #                 containing the split return of the function
+      	# initialize a variable = to the characters
+	# checks if 'w' in variable and length of split function == 1
+	  #loops while a variable < len of an item in a list
+	  	 # checks if the index of string = 'w'
+		   # initializes a variable = a string
+		   # initializes a variable =  call pronouceW (word, index)
+		 # adds 1 to the index
+      	# or if 'w' in string
+	  #loops while a variable < length of an item in a list
+                 # checks if the index of string = 'w'
+                   # initializes a variable = a string
+                   # initializes a variable = call pronouceW (word, index)
+                 # adds 1 to the index
+	# or "w' not in string
+	  # initialize a variable = string
+	# adds 1 to index
+	# append a string to a list
+      # loops while boolean flag == False
+      	# initializes a variable = a string
+	# loops while index < length of split function
+	  # loops while index < length of list of complex vowels
+	    # checks if complex vowels index is in a string and complex
+	    #                                vowels in another string
+	      # initializes a variable = 0
+	      # loops while variable < length of a string
+	      	# initializes a varible = a string
+		# initializes a variable = index + 2
+		# checks if complex vowels index == [index: two indices ahead]
+		#                                   in lower case
+			# initializes a variable = the complex vowels
+			# initializes a variable = call complexVowel (vowels)
+			# concatenates the variable to a string
+			# adds 1 to an index
+		# or
+		  # concatenates the character to a string
+		# adds 1 to an index
+		# reinitialzes a variable = a string
+	# adds 1 to another index
+       	# reinitialize a variable = an empty string
+    # checks if length of a varible < 1
+      # initializes a varible = a string
+    # reinitializes boolean flag = True
+    # apends a string to another list
+  # checks if length of a variable == 1
+      # initialize a variable = another variable
+      # initializes a varible = calls pronounceWord (word)
+      # print a variable returned
+  # or checks if length of variable > 1
+    # initializes a variable = calls pronouncePhrase (phrase)
+    # prints a variable returned
+# initializes a function that calls getChoice (questions, options)
+# 		    	     while they don't want to quit
+       
+main()

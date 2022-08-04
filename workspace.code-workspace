@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "SSH FS - gl",
+			"uri": "ssh://gl/afs/umbc.edu/users/g/k/gkoleos1/home"
+		},
+		{
+			"name": "SSH FS - tunchiie",
+			"uri": "ssh://tunchiie/afs/umbc.edu/users/a/f/afasiku1/home"
+		}
+	]
+}
